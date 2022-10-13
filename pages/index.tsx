@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 
 import Home from '../src/pageContainer/Home'
 import { PostType } from '../src/types'
@@ -9,7 +10,14 @@ const NEXT_POST_STEP = 4
 const HomePage: NextPage<{ initialPosts: [PostType]; total: number }> = ({
   initialPosts,
 }) => {
-  return <Home initialPosts={initialPosts} />
+  return (
+    <>
+      <Head>
+        <title>Valeriy Khoma</title>
+      </Head>
+      <Home initialPosts={initialPosts} />
+    </>
+  )
 }
 
 export const getServerSideProps = async () => {

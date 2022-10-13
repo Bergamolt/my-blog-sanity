@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import { client } from '../../src/lib/client'
 import Post from '../../src/pageContainer/Post'
@@ -11,7 +12,12 @@ const PostPage = (props: Props) => {
   const { post } = props
 
   return (
-    <Post title={post.title} body={post.body} _createdAt={post._createdAt} />
+    <>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
+      <Post title={post.title} body={post.body} _createdAt={post._createdAt} />
+    </>
   )
 }
 
