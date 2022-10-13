@@ -15,17 +15,17 @@ type socialNetworksType = {
 const socialNetworks: Array<socialNetworksType> = [
   {
     name: 'youtube',
-    url: 'https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA',
+    url: '#',
     icon: AiFillYoutube,
   },
   {
     name: 'instagram',
-    url: 'https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA',
+    url: '#',
     icon: AiFillInstagram,
   },
   {
     name: 'email',
-    url: 'https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA',
+    url: '#',
     icon: AiFillMail,
   },
 ]

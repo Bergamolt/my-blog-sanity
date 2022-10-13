@@ -61,6 +61,7 @@ const Home = ({ initialPosts }: Props) => {
               title={post.title}
               slug={post.slug.current}
               description={post.description}
+              image={post?.image}
             />
           ))}
         </PostGrid>

@@ -31,7 +31,7 @@ export async function loadPosts(
 }> {
   const query = `{
     "posts": *[_type == "post"] | order(publishedAt desc) [${start}...${end}] {
-      _id, title, slug, publishedAt, description
+      _id, title, slug, publishedAt, description, image
     },
     "total": count(*[_type == "post"])
   }`

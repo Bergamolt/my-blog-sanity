@@ -15,4 +15,4 @@ export const client = sanityClient({
 
 export const builder = imageImportBuilder(client)
 
-export const urlFor = (source: string) => builder.image(source)
+export const urlFor = (source: {}) => builder.image(source)
